@@ -1,0 +1,127 @@
+body {
+    background: url(https://github.com/academia01-2019/d-N-105-psdNotify/blob/master/banner.png?raw=true)
+    }
+    
+
+    
+header {
+        grid-area: header;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    
+header a {
+        color: white;
+        font-size: 10pt;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    }
+    
+nav {
+        grid-area: nav;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+.grid {
+        display: grid;
+        grid-template-areas: 'header header header header '
+        'nav nav nav nav'
+        'section section section section '
+        'footer footer footer footer';
+    }
+    
+footer {
+        grid-area: footer;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+footer div {
+        width: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+.banner {
+    background-image: url(banner.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vw;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 50pt;
+    margin-left: 8pt;
+}
+
+h3 {
+    color: white;
+    font-family: 'Tillana', cursive;
+    font-size: 18pt;
+    margin-left: 8pt;   
+}
+.section {
+
+}
+
+.icones {
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ios {
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px;
+
+}
+
+.windows {
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px;
+
+}
+
+.android {
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px
+
+}
+
+.icones:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 20%;
+    border: 2px solid red;
+
+}
+
+footer nav a {
+    font-family: sans-serif;
+    width: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
