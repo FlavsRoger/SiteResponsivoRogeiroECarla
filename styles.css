@@ -1,56 +1,54 @@
 body {
     background: url(https://github.com/academia01-2019/d-N-105-psdNotify/blob/master/banner.png?raw=true)
-    }
     
+}
+    
+#main {
+    display: grid;
+    grid-template-areas:'header header header header '
+    'aside aside aside aside '
+    'section section section section'
+    'footer footer footer footer';
+
+    grid-auto-rows: 10vh 20vh 50vh 40vh;
+    grid-column-gap: 10px;
+}
 
     
 header {
+        background-color: green;
         grid-area: header;
         display: flex;
         align-items: center;
         justify-content: space-around;
     
-    }
-    
-header a {
-        color: white;
-        font-size: 10pt;
-        text-decoration: none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-    }
+}   
+
     
 nav {
         grid-area: nav;
-            display: flex;
+        display: flex;
         justify-content: center;
         align-items: center;
     
-    }
-    
-.grid {
-        display: grid;
-        grid-template-areas: 'header header header header '
-        'nav nav nav nav'
-        'section section section section '
-        'footer footer footer footer';
-    }
+}
     
 footer {
+        display: flex;
         grid-area: footer;
         background-color: grey;
-        display: flex;
         align-items: center;
         justify-content: center;
-    }
-    
-footer div {
+}
+
+footer nav a {
+        font-family: sans-serif;
         width: 190px;
         display: flex;
         align-items: center;
         justify-content: space-around;
     }
-
+    
 .banner {
     background-image: url(banner.png);
     background-position:center;
@@ -73,11 +71,35 @@ h3 {
     font-size: 18pt;
     margin-left: 8pt;   
 }
-.section {
+.aside {
+    grid-area: aside;
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;     
+
+}
+
+.centro-icones {
+    grid-area: aside;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: space-around;
+}
+
+.centro-icones p {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12pt;
+    margin-left: 8pt;
 
 }
 
 .icones {
+    grid-area: icones;
     align-items:center;
     display: flex;
     flex-direction: row;
@@ -92,11 +114,27 @@ h3 {
 
 }
 
+.ios:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 20%;
+    border: 2px solid red;
+
+}
+
 .windows {
     border-radius: 100px;
     background-color: black;
     opacity: 0.5;
     padding: 10px;
+
+}
+
+.windows:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 20%;
+    border: 2px solid red;
 
 }
 
@@ -108,20 +146,35 @@ h3 {
 
 }
 
-.icones:hover {
+.android:hover {
     cursor: pointer;
     opacity: 0.8;
     border-radius: 20%;
     border: 2px solid red;
+    
 
 }
 
-footer nav a {
-    font-family: sans-serif;
-    width: 190px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.icone-1 {
+    border-radius: 100px;
+    background-color: green;
+    opacity: 0.5;
+    padding: 10px
+
 }
 
+.icone-2 {
+    border-radius: 100px;
+    background-color: green;
+    opacity: 0.5;
+    padding: 10px
 
+}
+
+.icone-3 {
+    border-radius: 100px;
+    background-color: green;
+    opacity: 0.5;
+    padding: 10px
+
+}
